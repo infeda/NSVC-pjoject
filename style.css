@@ -16,9 +16,10 @@
   max-width: 1184px;
   min-width: 320px;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: #5C6162;
+  display: inline-block;
 }
 
 .header {
@@ -118,5 +119,124 @@
   /* opacity: 0.5; */
   cursor: pointer;
   transition: box-shadow linear 0.5s;
+}
+
+.theses {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.theses__box {
+  width: 70%;
+  margin: 110px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.theses__text {
+  text-align: center;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.07em;
+  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.theses__text_important {
+  color: #0094DE;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0;
+  padding: 0;
+}
+
+.services {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 148, 222, 0.05);
+}
+
+.section__heading {
+  margin: 110px auto 0;
+  max-width: 726px;
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #5C6162;
+}
+
+.services__content {
+  width: 70%;
+  margin: 20px auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+  gap: 40px;
+  align-items: center;
+}
+
+.services__card {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300; 
+  /* font-weight should be 300; */
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  color: #5C6162;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.services__card_first {
+  min-height: 110px;
+  color: #0094DE;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.services__icon-done {
+  width: 17.6px;
+  height: 13.4px;
+  object-position: center;
+  object-fit: contain;
+  margin: 0 10px 0 0;
+}
+
+.services__text {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback {
+  width: 100%;
+  min-height: 170px;
+}
+
+.feedback__content {
+  width: 70%;
+  margin: 95px auto 0;
+}
+
+.feedback__text {
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  margin: 30px 0 0;
+  padding: 0;
 }
 
