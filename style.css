@@ -55,6 +55,12 @@
   font-size: 16px;
 }
 
+.header__text:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity linear 0.3s;
+}
+
 .header__text_important {
   color: #0094DE;
 }
@@ -127,14 +133,14 @@
 
 .theses {
   width: 100%;
-  margin: 0;
+  margin: 110px 0;
   padding: 0;
   display: inline-block;
 }
 
 .theses__box {
   width: 70%;
-  margin: 110px auto 0;
+  margin: 0 auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
@@ -165,7 +171,7 @@
 .services {
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 50px 0;
   background-color: rgba(0, 148, 222, 0.05);
 }
 
@@ -180,13 +186,10 @@
   color: #5C6162;
 }
 
-.services__heading {
-  margin-top: 110px;
-}
 
 .services__content {
   width: 70%;
-  margin: 20px auto 0;
+  margin: 40px auto 0;
   padding: 0;
   display: grid;
   grid-template-columns: 250px 1fr 1fr 1fr;
@@ -232,7 +235,6 @@
 
 .feedback {
   width: 100%;
-  min-height: 170px;
 }
 
 .feedback__content {
@@ -241,10 +243,11 @@
 }
 
 .feedback__text {
-  font-weight: 600;
+  font-family: 'Roboto';
+  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.05em;
-  margin: 30px 0 0;
+  margin: 40px 0 0;
   padding: 0;
   color: #5C6162;
 }
@@ -274,6 +277,17 @@
   font-weight: 300;
   color: #5C6162;
   font-size: 14px;
+  padding-left: 20px;
+}
+
+.feedback__input:hover {
+  cursor: pointer;
+}
+
+.feedback__input:focus {
+  box-shadow: #0094DE;
+  cursor: auto;
+  border: inherit
 }
 
 .feedback__submit-button {
@@ -282,7 +296,7 @@
 }
 
 .contacts {
-  width: 85%;
+  width: 90%;
   margin: 115px auto 88px;
 }
 
@@ -294,7 +308,7 @@
 }
 
 .contacts__maps {
-  width: 60%;
+  width: 70%;
   max-height: 560px;
   border: none;
 }
