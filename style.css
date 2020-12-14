@@ -67,6 +67,8 @@
   font-style: normal;
   font-size: 16px;
   letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #5C6162;
 }
 
 .header__text:hover {
@@ -90,7 +92,7 @@
   margin: 0;
   padding: 0;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)),
-  url('https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  url('./images/introduction-background.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -138,6 +140,11 @@
 .introduction__button {
   margin: 128px auto 0;
   width: 250px;
+}
+
+.introduction__button-link {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 @media(max-width: 840px) {
@@ -320,6 +327,7 @@
   padding: 0;
   color: #5C6162;
 }
+
 @media(max-width: 765px) {
   .feedback__text {
     text-align: center;
@@ -329,7 +337,6 @@
 .feedback__form {
   width: 100%;
   margin: 30px auto 0;
-
 }
 
 .feedback__fieldset {
@@ -367,7 +374,6 @@
 .feedback__input:focus {
   box-shadow: #0094DE;
   cursor: auto;
-  border: inherit;
 }
 
 .feedback__submit-button {
