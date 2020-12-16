@@ -11,17 +11,17 @@
 </head>
 
 <body class="root">
-  <page class="page">
+  <div class="page">
 
     <header class="header">
       <div class="header__content">
-        <img class="header__logo" src="./images/mtvc-logo-good.png">
+        <img class="header__logo" src="./images/mtvc-logo-good.png" alt="logotipas">
         <ul class="header__info">
           <li>
-            <a class="header__text" href="#services">Paslaugos</a>
+            <a class="header__text header__text_categ_services">Paslaugos</a>
           </li>
           <li>
-            <a class="header__text" href="#contacts"><span class="header__text_important">Kontaktai</span></a>
+            <a class="header__text header__text_categ_contacts"><span class="header__text_important">Kontaktai</span></a>
           </li>
         </ul>
       </div>
@@ -118,8 +118,8 @@
                 <span id="name-error" class="feedback__form-item-error"></span>
               </label>
               <label class="feedback__field">
-                <input type="tel" name="tel-number" id="tel-number" value="" minlength="12" maxlength="12"
-                  class="feedback__input feedback__input_tel-number" placeholder="Telefono numeris"
+                <input type="tel" name="tel-number" id="tel-number" value="" minlength="9" maxlength="12"
+                  class="feedback__input feedback__input_tel-number" placeholder="8xxxxxxxx"
                   required>
                 <span id="tel-number-error" class="feedback__form-item-error"></span>
               </label>
@@ -167,7 +167,7 @@
       <p class="footer__text">@ 2020 VŠĮ Mokymų, tyrimų ir vystymo centras</p>
       
     </footer>
-  </page>
+  </div>
   <script src="./script/index.js"></script> 
 </body>
 
