@@ -1,8 +1,10 @@
 <?php
+    $addr = 'info@mtvc.lt'
+
     $name = $_POST['name'];
     $phone = $_POST['tel-number'];
 
-    mail('buhalterija@mtvc.lt', 'New contact request', 'Name: ' . $name . ', Phone: ' . $phone);
+    mail($addr, 'New contact request', 'Name: ' . $name . ', Phone: ' . $phone);
 
     $user_message = "Thank you, " . $name . ', we will recall you as far as possible';
 
