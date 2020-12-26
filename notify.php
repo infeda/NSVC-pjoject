@@ -9,6 +9,6 @@
     $user_message = "Thank you, " . $name . ', we will recall you as far as possible';
 
     echo '<script>alert("' . $user_message . '")</script>';
-    echo '<html><a href="http://mtvc.lt">Go back</a></html>';
+    echo '<html><a href="https://mtvc.lt">Go back</a></html>';
     die();
 ?>
