@@ -6,12 +6,21 @@ const done = document.querySelector('.text-done');
 const adress = document.querySelector('.contacts-list__block_adress');
 const email = document.querySelector('.contacts-list__block_email');
 
+
+function sendMail() {
+  var link = "mailto:info@mtvc.lt"
+           + "?cc="
+           + "&subject=" + encodeURIComponent("Norėčiau gauti buhalterinę paslaugą")
+  ;
+  
+  window.location.href = link;
+}
+
 introductionButton.addEventListener('click', () => {
   const feedbackInput = document.querySelector('.feedback__input_name');
   feedbackInput.focus();
   feedbackInput.scrollIntoView({block: 'center', behavior: 'smooth'});
 });
-
 
 servicesLink.addEventListener('click', () => {
   const servicesBlock = document.querySelector('.services');
@@ -44,14 +53,3 @@ adress.addEventListener('click', () => {
 email.addEventListener('click', () => {
   sendMail();
 })
-
-
-function sendMail() {
-  var link = "mailto:info@mtvc.lt"
-           + "?cc="
-           + "&subject=" + encodeURIComponent("Norėčiau gauti buhalterinę paslaugą")
-          //  + "&body=" + encodeURIComponent(formElement.querySelector('.feedback__input_name').value, formElement.querySelector('.feedback__input_tel-number').value)
-  ;
-  
-  window.location.href = link;
-}

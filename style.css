@@ -438,7 +438,7 @@
 @media(max-width: 599px) {
   .contacts__maps {
     width: 100%;
-    min-height: 225px;
+    min-height: 400px;
   }
 }
 
