@@ -483,6 +483,12 @@ margin-bottom: 0;
   margin-top: 10px;
 }
 
+.contacts-list__link {
+  text-decoration: none;
+  font-style: inherit;
+  color: #0094DE;
+}
+
 .footer {
   background-color: #5C6162;
   width: 100%;
