@@ -411,6 +411,18 @@
   margin-top: 50px;
 }
 
+.contacts-list__block_clickable {
+  color: #0094DE;
+  transition: linear 0.3s;
+}
+
+@media(min-width: 1024px) {
+  .contacts-list__block_clickable:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+}
+
 @media(max-width: 599px) {
   .contacts__container {
     flex-direction: column;
@@ -481,6 +493,10 @@ margin-bottom: 0;
   padding: 0;
   margin: 0;
   margin-top: 10px;
+}
+
+.contacts-list__text_adress {
+  color: #0094DE;
 }
 
 .contacts-list__link {
